@@ -1,0 +1,181 @@
+body {
+	background-color: #cc99ff;
+	background-image: url('https://i.imgur.com/sWf97Lg.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	height: 100%;
+	background-size: 75%;
+
+}
+
+h1 {
+	font-family: 'Pacifico', cursive;
+	font-size: 100px;
+	color: #ff4dd2;
+	text-shadow: 3px 3px #4d4dff;
+	text-align: center;
+}
+
+.container {
+	opacity: 0.95;
+}
+
+#menuBG {
+	margin: 0% auto;
+	width: 650px;
+	border-radius: 10px;
+	padding: 1px 0px;
+	opacity: 1;
+}
+
+#frmMenu {
+	margin: 0% auto;
+	width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+	border-radius: 10px;
+}
+
+.menu { 
+	font-family: 'Roboto Condensed', sans-serif;
+	flex: 1 150px;
+	min-width: 0;
+	border: 2px solid #330066;
+	box-shadow: 0 0 0 3px rgba(115, 0, 230 .7);
+	padding: 0 0 10px 0;
+}
+
+.menu:nth-child(even) {
+	background-color: rgba(255, 204, 255, 0.8);
+	border-radius: 10px;
+}
+
+.menu:nth-child(odd) {
+	background-color: rgba(255, 204, 255, 0.8);
+	border-radius: 10px;
+}
+
+.menu>H3 {
+	font-family: 'Concert One', cursive;
+	color: #fff;
+	padding: 0 0 0 60px;
+	margin: 0 auto;
+	background-color: rgba(153, 0, 153, .75);
+	border-radius: 10px 10px 0 0;
+	text-shadow: 1.5px 1.5px 5px #6600ff, 1px 1px 5px #000;
+}
+
+.button {
+	cursor: pointer;
+	color: #fff;
+	width: 100%;
+	display: block;
+	text-decoration: none;
+	border: 2px solid #330066;
+	border-radius: .5em;
+	margin: 1% auto;
+	padding: .1px 0 .1px 0px;
+    font: 18px 'Concert One', cursive;
+	text-shadow: 1.5px 1.5px 5px #6600ff, 1px 1px 5px #000;
+	background-color: rgba(153, 0, 153, .75);
+	box-shadow: 0 0 0 2px rgba(115, 0, 230 .7);
+	transition-property: transform background, box-shadow, color;
+	transition-duration: .3s, .5s, .2s;
+	transition-timing-function: ease-in-out;
+}
+
+.button>p {
+	text-align: center;
+	font-weight: bold;
+}
+
+.button:hover {
+	font: 18px 'Concert One', cursive;
+	color: #000;
+	background-color: rgba(255, 204, 255, 0.8);
+	text-shadow: 1.5px 1.5px 5px #ffccff, 1px 1px 5px #ffccff;
+}
+
+.controls {
+	display: flex;
+    flex-direction: columns;
+    justify-content: space-between;
+	margin: 0 auto;
+	width: 550px;
+}
+
+.controls>.button {
+	flex: 1 150px;
+}
+
+#cart {
+	opacity: 100%;
+	margin: 15px auto;
+	width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+	background-color: rgba(255, 204, 255, 0.8);
+	border-radius: 10px;
+	padding: 0px;
+	border: 2px solid #330066;
+	box-shadow: 0 0 0 3px rgba(115, 0, 230 .7);
+}
+
+
+/*pizza tutorial css*/
+#menuBG_basic {
+	top: 0%;
+	margin: 0% auto;
+	width: 90%;
+	background-color: rgb(242, 239, 237);
+}
+
+#menuBG_basic>h1 {
+	color: darkblue;
+	font: 60px Merriweather;
+	width: 60%;
+	margin: 0 auto;
+}
+
+
+
+#frmMenu_basic,
+#cart_basic {
+	width: 400px; 
+	margin: 0 auto;
+}
+
+
+#totalPrice { 
+	width: 40%;
+	margin: 40px 0 0 0;
+	float: left;
+}
+
+.menu_basic,
+#showText { 
+	width: 40%;
+	margin: 20px auto;
+	float: left;
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 800px) {
+	body {
+		background-position: 50% 3%
+	}
+	
+}#showText{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+#totalPrice{
+	font-family: 'Roboto Condensed', sans-serif;
+}
